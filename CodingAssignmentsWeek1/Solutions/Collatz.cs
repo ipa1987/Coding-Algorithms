@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingAssignmentsWeek1
+namespace CodingAssignmentsWeek1.Solutions
 {
     public class Collatz
     {
@@ -32,7 +32,7 @@ namespace CodingAssignmentsWeek1
                 }
                 else
                 {
-                    n = (3 * n) + 1;
+                    n = 3 * n + 1;
                 }
 
                 // increments by +1

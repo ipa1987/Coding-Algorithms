@@ -1,4 +1,6 @@
-﻿namespace CodingAssignmentsWeek1
+﻿using CodingAssignmentsWeek1.Solutions;
+
+namespace CodingAssignmentsWeek1
 {
     internal class Program
     {
@@ -20,7 +22,15 @@
             string reversedResult = ReverseAndConcatenate.Perform(numberToReverse);
             Console.WriteLine($"Reversed and concatenated result: {reversedResult}");
 
+            // Test Uncensor
+            Console.Write("Enter the censored string: ");
+            string censoredString = Console.ReadLine()!;
 
+            Console.Write("Enter the vowels string: ");
+            string vowels = Console.ReadLine()!;
+
+            string uncensoredResult = Uncensor.Perform(censoredString, vowels);
+            Console.WriteLine($"The uncensored string is: {uncensoredResult}");
 
         }
     }

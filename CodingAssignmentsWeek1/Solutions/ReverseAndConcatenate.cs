@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingAssignmentsWeek1
+namespace CodingAssignmentsWeek1.Solutions
 {
     public class ReverseAndConcatenate
     {
