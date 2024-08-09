@@ -39,6 +39,18 @@ namespace CodingAssignmentsWeek1
             bool palindromeResult = AlmostPalindrome.IsAlmostPalindrome(palindromeCheck);
             Console.WriteLine($"Is the string an almost-palindrome? {palindromeResult}");
 
+            // Test TranslateWord
+            Console.Write("Enter a word to translate to Pig Latin: ");
+            string word = Console.ReadLine()!;
+            string translatedWord = PigLatinTranslator.TranslateWord(word);
+            Console.WriteLine($"Translated word: {translatedWord}");
+
+            // Test TranslateSentence
+            Console.Write("Enter a sentence to translate to Pig Latin: ");
+            string sentence = Console.ReadLine()!;
+            string translatedSentence = PigLatinTranslator.TranslateSentence(sentence);
+            Console.WriteLine($"Translated sentence: {translatedSentence}");
+
         }
     }
 }
